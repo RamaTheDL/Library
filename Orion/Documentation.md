@@ -29,7 +29,7 @@ CloseCallback = <function> - Function to execute when the window is closed.
 
 ## Creating a Tab
 ```lua
-local Tab1 = Window:MakeTab({
+local Tab = Window:MakeTab({
 	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
