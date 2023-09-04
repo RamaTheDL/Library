@@ -27,13 +27,13 @@ OrionLib:MakeNotification({
 	Time = 10
 })
 
-local Section = Tab1:AddSection({
-	Name = "This is Section!"
-})
-
 Tab1:AddLabel("Label!")
 
 Tab1:AddParagraph("Paragraph","Paragraph Content!")
+
+local Section = Tab1:AddSection({
+	Name = "This is Section!"
+})
 
 Tab2:AddButton({
 	Name = "This Is Button!",
