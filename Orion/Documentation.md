@@ -8,6 +8,13 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Ram
 
 
 
+## Example Script
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Orion%20Example%20UI.lua"))()
+```
+
+
+
 ## Creating a Window
 ```lua
 local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
