@@ -3,7 +3,7 @@ This documentation is for the stable release of Orion Library.
 
 ## Booting the Library
 ```lua
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Source.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Source.lua')))()
 ```
 
 
@@ -928,7 +928,7 @@ return {
 
 
 
-## Example Script (Optional)
+## Example Script (For View)
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/OrionExampleUI.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/OrionExampleUI.lua"))()
 ```
