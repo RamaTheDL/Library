@@ -3,9 +3,9 @@ This documentation is for ArrayField Library.
 
 > [!IMPORTANT]
 > ## **1. Booting the Library**
-```lua
-local Rayfield = > loadstring(game:HttpGet('https://raw.githubusercontent> .com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
-```
+> ```lua
+> local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent> .com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
+> ```
 
 ## Creating a Window
 ```lua
@@ -200,8 +200,9 @@ local Dropdown = Tab:CreateDropdown({
    -- The variable (Option) is a string for the value that the dropdown was changed to
    end,
 })
+```
 
-**Updating a Dropdown**
+Updating a Dropdown
 
 Dropdown:Set("Option 2") -- The new option value
 
