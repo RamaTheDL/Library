@@ -3,9 +3,9 @@ This documentation is for ArrayField Library.
 
 > [!IMPORTANT]
 > ## **1. Booting the Library**
-> ```lua
-> local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent> .com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
-> ```
+```lua
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
+```
 
 ## Creating a Window
 ```lua
