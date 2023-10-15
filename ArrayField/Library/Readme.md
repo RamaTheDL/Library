@@ -241,7 +241,6 @@ SectionParent = Section -- Section it's parented to
 
 })
 ```
-
 #### Updating an existing element
 ```lua
 Element:Destroy() -- Destroy
@@ -258,5 +257,24 @@ Element:Unlock()  -- Unlock
 
 ### Check the value of an existing element
 To check the current value of an existing element, using the variable, you can do `ElementName.CurrentValue`, if it’s a keybind or dropdown, you will need to use `KeybindName.CurrentKeybind` or `DropdownName.CurrentOption` You can also check it via the flags from `Rayfield.Flags`.
-
+ㅤ
 ## **2. Binds**
+
+### Creating a Keybind
+```lua
+local Keybind = Tab:CreateKeybind({
+   Name = "Keybind Example",
+   CurrentKeybind = "Q",
+   HoldToInteract = false,
+   Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Keybind)
+   -- The function that takes place when the keybind is pressed
+   -- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
+   end,
+})
+```
+
+#### Updating a Keybind
+```lua
+Keybind:Set("RightCtrl") -- Keybind (string)
+```
