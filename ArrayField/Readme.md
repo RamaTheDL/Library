@@ -1,7 +1,7 @@
 # ArrayField Library
 This documentation is for ArrayField Library.
 
-## Booting the Library
+## 1. Booting the Library
 ```lua
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Source.lua'))()
 ```
@@ -65,12 +65,44 @@ local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argum
 ### Updating a Section
 ```lua
 Section:Set("Section Example")
-
 Section:Destroy()
 Section:Lock()
 Section:Unlock()
 ```
 
+# 2.Interact
 
+## Notifying the User
+```lua
+Rayfield:Notify({
+	Title = "Notification Title",
+	Content = "Notification Content",
+	Duration = 6.5,
+	Image = 4483362458,
+	Actions = { -- Notification Buttons
+		Ignore = {
+			Name = "Okay!",
+			Callback = function()
+				print("The user tapped Okay!")
+			end
+		},
+	},
+})
+```
 
+## Creating a Button
+```lua
+local Button = Tab:CreateButton({
+   Name = "Button Example",
+   Info = "Button info/Description.", -- Speaks for itself, Remove if none.
+   Interact = 'Changable',
+   Callback = function()
+   print("this is Button!") -- the function
+   end,
+})
+```
 
+#### Updating Button
+```lua
+Button:Set("Button Example","Interact") -- if you put nil, the string will not change
+```
