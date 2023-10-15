@@ -72,12 +72,15 @@ local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argum
 ```lua
 Section:Set("Section Example")
 ```
+
 ```lua
 Section:Destroy()
 ```
+
 ```lua
 Section:Lock()
 ```
+
 ```lua
 Section:Unlock()
 ```
