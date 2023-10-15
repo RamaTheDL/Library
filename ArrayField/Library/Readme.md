@@ -5,7 +5,7 @@ This documentation is for ArrayField Library.
 > [!NOTE]
 > To get started with Arrayfield, check out the
 > script at the bottom. It provides quick links on
-> how to use all of the Rayfield features for your
+> how to use all of the ArrayField features for your
 > own project.
 > Keep the this documentation around so that you can
 > always refer back to it as you build.
