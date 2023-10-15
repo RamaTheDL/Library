@@ -341,3 +341,20 @@ local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "P
 ```lua
 Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"})
 ```
+
+# - Others
+## **1. Credits**
+### Original Sources
+- Rayfield
+- Discord
+- Developers
+- Website designer : Darth Gigi#0124 & kura#6311
+- Sirius & Rayfield Dev: shlex#9425
+- Developers: iRay#1488 & Metas
+  
+- **Helpers:**
+- alyssa
+- JustHey
+- !vma
+- Toon
+- Rafa
