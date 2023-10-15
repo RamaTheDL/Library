@@ -299,8 +299,23 @@ Keybind:Set("RightCtrl") -- Keybind (string)
 ⁣
 
 
+ㅤ
 # - UI Components
 ## **1. Textual Elements**
-ㅤ
 ### Creating a Label
 ```lua
+local Label = Tab:CreateLabel("Label Example",SectionParent)
+```
+#### Updating a Label
+```lua
+Label:Set("Label Example")
+```
+
+### Creating a Paragraph
+```lua
+local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example",SectionParent})
+```
+#### Updating a Paragraph
+```lua
+Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"})
+```
