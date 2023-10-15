@@ -1,14 +1,11 @@
 # × ArrayField Library ×
 This documentation is for ArrayField Library.
-
 ## Getting Started
 ``
 To get started with Arrayfield, check out the script on the bottom. It provides quick links on how to use all of the ArrayField features for your own project. Keep the this documentation around so that you can always refer back to it as you build.
 
 Found a missing feature that you can’t live without? Please suggest it on Discord (#sirius-forums channel) and even consider adding it yourself on GitHub! Rayfield & ArrayField is an open source project and contributions from developers like you are more than welcome!
 ``
-
-⁣
 
 # - Configuration
 ## **1. Booting the Library**
