@@ -344,7 +344,7 @@ Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"})
 
 # - Others
 ## **1. Credits**
-### Original Sources
+### **Original Sources**
 - Rayfield
 - Discord
 - Developers
@@ -352,7 +352,7 @@ Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"})
 - Sirius & Rayfield Dev: shlex#9425
 - Developers: iRay#1488 & Metas
   
-- **Helpers:**
+### **Helpers:**
 - alyssa
 - JustHey
 - !vma
