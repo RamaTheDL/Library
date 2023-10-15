@@ -70,7 +70,7 @@ Section:Lock()
 Section:Unlock()
 ```
 
-# **2. Interact**
+## **2. Interact**
 ## Notifying the User
 ```lua
 Rayfield:Notify({
