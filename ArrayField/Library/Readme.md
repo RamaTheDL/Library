@@ -2,7 +2,7 @@
 This documentation is for ArrayField Library.
 ㅤ
 ㅤ
-## Configuration
+# - Configuration
 ### **1. Booting the Library**
 ```lua
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
