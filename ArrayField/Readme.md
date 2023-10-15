@@ -1,4 +1,4 @@
-# × ArrayField Library ×
+l# × ArrayField Library ×
 This documentation is for ArrayField Library.
 
 ## **1. Booting the Library**
@@ -71,7 +71,6 @@ Section:Unlock()
 ```
 
 # **2. Interact**
-
 ## Notifying the User
 ```lua
 Rayfield:Notify({
@@ -90,6 +89,7 @@ Rayfield:Notify({
 })
 ```
 
+
 ## Creating a Button
 ```lua
 local Button = Tab:CreateButton({
@@ -105,6 +105,7 @@ local Button = Tab:CreateButton({
 ```lua
 Button:Set("Button Example","Interact") -- if you put nil, the string will not change
 ```
+
 
 ## Creating a Toggle
 ```lua
@@ -124,6 +125,7 @@ local Toggle = Tab:CreateToggle({
 Toggle:Set(false)
 ```
 
+
 ## Creating a Color Picker
 ```lua
 local ColorPicker = Tab:CreateColorPicker({
@@ -142,6 +144,7 @@ local ColorPicker = Tab:CreateColorPicker({
 ```lua
 ColorPicker:Set(Color3.fromRGB(255,255,255)
 ```
+
 
 ## Creating a Slider
 ```lua
@@ -164,6 +167,7 @@ local Slider = Tab:CreateSlider({
 Slider:Set(10) -- The new slider integer value
 ```
 
+
 ## Creating a Textbox
 ```lua
 local Input = Tab:CreateInput({
@@ -180,6 +184,7 @@ local Input = Tab:CreateInput({
    end,
 })
 ```
+
 
 ## Creating a Dropdown Menu
 ```lua
