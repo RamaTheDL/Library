@@ -101,7 +101,6 @@ local Button = Tab:CreateButton({
    end,
 })
 ```
-
 #### Updating Button
 ```lua
 Button:Set("Button Example","Interact") -- if you put nil, the string will not change
@@ -120,7 +119,6 @@ local Toggle = Tab:CreateToggle({
    end,
 })
 ```
-
 #### Updating a Toggle
 ```lua
 Toggle:Set(false)
@@ -140,7 +138,6 @@ local ColorPicker = Tab:CreateColorPicker({
 	end
 })
 ```
-
 #### Updating a Color Picker
 ```lua
 ColorPicker:Set(Color3.fromRGB(255,255,255)
@@ -162,8 +159,48 @@ local Slider = Tab:CreateSlider({
    end,
 })
 ```
-
 #### Updating a Slider
 ```lua
 Slider:Set(10) -- The new slider integer value
+```
+
+## Creating a Textbox
+```lua
+local Input = Tab:CreateInput({
+   Name = "Input Example",
+   Info = "Input info/Description.", -- Speaks for itself, Remove if none.
+   PlaceholderText = "Input Placeholder",
+   NumbersOnly = true, -- If the user can only type numbers. Remove if none.
+   CharacterLimit = 15, --max character limit. Remove if none.
+   OnEnter = true, -- Will callback only if the user pressed ENTER while the box is focused.
+   RemoveTextAfterFocusLost = false,
+   Callback = function(Text)
+   -- The function that takes place when the input is changed
+   -- The variable (Text) is a string for the value in the text box
+   end,
+})
+```
+
+## Creating a Dropdown Menu
+```lua
+local Dropdown = Tab:CreateDropdown({
+   Name = "Dropdown Example",
+   Options = {"Option 1","Option 2"},
+   CurrentOption = "Option 1" or {"Option 1","Option 3"},
+   MultiSelection = true, -- If MultiSelections is allowed
+   Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Option)
+   -- The function that takes place when the selected option is changed
+   -- The variable (Option) is a string for the value that the dropdown was changed to
+   end,
+})
+```
+#### Updating a Dropdown
+```lua
+Dropdown:Set("Option 2") -- The new option value
+
+Dropdown:Refresh({<table>},<selected>)
+
+Dropdown:Add('test')
+Dropdown:Remove('test')
 ```
