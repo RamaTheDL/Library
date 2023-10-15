@@ -311,6 +311,9 @@ local Label = Tab:CreateLabel("Label Example",SectionParent)
 Label:Set("Label Example")
 ```
 
+
+ㅤ
+
 ### Creating a Paragraph
 ```lua
 local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example",SectionParent})
