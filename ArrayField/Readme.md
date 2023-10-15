@@ -1,4 +1,5 @@
 # ArrayField Library
+This documentation is for ArrayField Library.
 
 ## Booting the Library
 ```lua
@@ -56,4 +57,20 @@ Window:Prompt({
 })
 ```
 
-##
+## Creating a Section
+```lua
+local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+```
+
+### Updating a Section
+```lua
+Section:Set("Section Example")
+
+Section:Destroy()
+Section:Lock()
+Section:Unlock()
+```
+
+
+
+
