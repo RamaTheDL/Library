@@ -77,7 +77,8 @@ Section:Unlock()
 ```
 
 ## **2. Interact**
-## Notifying the User
+ㅤ
+### Notifying the User
 ```lua
 Rayfield:Notify({
 	Title = "Notification Title",
@@ -95,7 +96,7 @@ Rayfield:Notify({
 })
 ```
 ㅤ
-## Creating a Button
+### Creating a Button
 ```lua
 local Button = Tab:CreateButton({
    Name = "Button Example",
@@ -111,7 +112,7 @@ local Button = Tab:CreateButton({
 Button:Set("Button Example","Interact") -- if you put nil, the string will not change
 ```
 ㅤ
-## Creating a Toggle
+### Creating a Toggle
 ```lua
 local Toggle = Tab:CreateToggle({
    Name = "Toggle Example",
@@ -129,7 +130,7 @@ local Toggle = Tab:CreateToggle({
 Toggle:Set(false)
 ```
 ㅤ
-## Creating a Color Picker
+### Creating a Color Picker
 ```lua
 local ColorPicker = Tab:CreateColorPicker({
 	Name = "Color Picker",
@@ -148,7 +149,7 @@ local ColorPicker = Tab:CreateColorPicker({
 ColorPicker:Set(Color3.fromRGB(255,255,255)
 ```
 ㅤ
-## Creating a Slider
+### Creating a Slider
 ```lua
 local Slider = Tab:CreateSlider({
    Name = "Slider Example",
@@ -169,7 +170,7 @@ local Slider = Tab:CreateSlider({
 Slider:Set(10) -- The new slider integer value
 ```
 ㅤ
-## Creating a Textbox
+### Creating a Textbox
 ```lua
 local Input = Tab:CreateInput({
    Name = "Input Example",
@@ -186,7 +187,7 @@ local Input = Tab:CreateInput({
 })
 ```
 ㅤ
-## Creating a Dropdown Menu
+### Creating a Dropdown Menu
 ```lua
 local Dropdown = Tab:CreateDropdown({
    Name = "Dropdown Example",
@@ -200,14 +201,18 @@ local Dropdown = Tab:CreateDropdown({
    end,
 })
 ```
-
+```lua
 Updating a Dropdown
-
+```
+```lua
 Dropdown:Set("Option 2") -- The new option value
-
+```
+```lua
 Dropdown:Refresh({<table>},<selected>)
-
+```
+```lua
 Dropdown:Add('test')
-
+```
+```lua
 Dropdown:Remove('test')
 ```
