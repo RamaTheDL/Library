@@ -1,6 +1,5 @@
-> [!NOTE]
-> # × ArrayField Library ×
-> This documentation is for ArrayField Library.
+/ × ArrayField Library ×
+This documentation is for ArrayField Library.
 
 > [!IMPORTANT]
 > ## **1. Booting the Library**
