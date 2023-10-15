@@ -6,7 +6,7 @@ This documentation is for ArrayField Library.
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
 ```
 
-## Creating a Window
+### Creating a Window
 ```lua
 local Window = Rayfield:CreateWindow({
    Name = "Rayfield Example Window",
@@ -35,12 +35,12 @@ local Window = Rayfield:CreateWindow({
 })
 ```
 ㅤ
-## Creating a Tab
+### Creating a Tab
 ```lua
 local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
 ```
 ㅤ
-## Prompting the Window
+### Prompting the Window
 ```lua
 Window:Prompt({
 	Title = 'Interface Prompt',
@@ -57,7 +57,7 @@ Window:Prompt({
 })
 ```
 ㅤ
-## Creating a Section
+### Creating a Section
 ```lua
 local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 ```
@@ -65,8 +65,14 @@ local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argum
 #### Updating a Section
 ```lua
 Section:Set("Section Example")
+```
+```lua
 Section:Destroy()
+```
+```lua
 Section:Lock()
+```
+```lua
 Section:Unlock()
 ```
 
