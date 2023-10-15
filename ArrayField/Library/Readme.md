@@ -1,6 +1,7 @@
 # × ArrayField Library ×
 This documentation is for ArrayField Library.
 
+# Configuration
 ## **1. Booting the Library**
 ```lua
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
@@ -213,4 +214,17 @@ Dropdown:Add('test')
 ```
 ```lua
 Dropdown:Remove('test')
+```
+
+## General Settings
+For every element you can add these. (Optional)
+
+```lua
+local ElementExample
+ElementExample = Tab:Create____({
+
+Info = 'Description/info',
+SectionParent = Section -- Section it's parented to
+
+})
 ```
