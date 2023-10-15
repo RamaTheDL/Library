@@ -1,7 +1,7 @@
 # ArrayField Library
 This documentation is for ArrayField Library.
 
-## 1. Booting the Library
+## Booting the Library
 ```lua
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Source.lua'))()
 ```
@@ -14,7 +14,7 @@ local Window = Rayfield:CreateWindow({
    LoadingSubtitle = "by Sirius",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
+      FolderName = "cool lib", -- Create a custom folder for your hub/game
       FileName = "Big Hub"
    },
    Discord = {
@@ -62,7 +62,7 @@ Window:Prompt({
 local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
 ```
 
-### Updating a Section
+#### Updating a Section
 ```lua
 Section:Set("Section Example")
 Section:Destroy()
@@ -70,7 +70,7 @@ Section:Lock()
 Section:Unlock()
 ```
 
-# 2.Interact
+# Interact
 
 ## Notifying the User
 ```lua
@@ -105,4 +105,65 @@ local Button = Tab:CreateButton({
 #### Updating Button
 ```lua
 Button:Set("Button Example","Interact") -- if you put nil, the string will not change
+```
+
+## Creating a Toggle
+```lua
+local Toggle = Tab:CreateToggle({
+   Name = "Toggle Example",
+   Info = "Toggle info/Description.", -- Speaks for itself, Remove if none.
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the toggle is pressed
+   -- The variable (Value) is a boolean on whether the toggle is true or false
+   end,
+})
+```
+
+#### Updating a Toggle
+```lua
+Toggle:Set(false)
+```
+
+## Creating a Color Picker
+```lua
+local ColorPicker = Tab:CreateColorPicker({
+	Name = "Color Picker",
+	Info = 'info or description',
+	SectionParent = Section, -- The Section it's parented to. (Optional)
+	Color = Color3.fromRGB(2,255,255),
+	Flag = "ColorPicker1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+		-- The function that takes place every time the color picker is moved/changed
+		-- The variable (Value) is a Color3fromRGB value based on which color is selected
+	end
+})
+```
+
+#### Updating a Color Picker
+```lua
+ColorPicker:Set(Color3.fromRGB(255,255,255)
+```
+
+## Creating a Slider
+```lua
+local Slider = Tab:CreateSlider({
+   Name = "Slider Example",
+   Info = "Button info/Description.", -- Speaks for itself, Remove if none.
+   Range = {0, 100},
+   Increment = 10,
+   Suffix = "Bananas",
+   CurrentValue = 10,
+   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   -- The function that takes place when the slider changes
+   -- The variable (Value) is a number which correlates to the value the slider is currently at
+   end,
+})
+```
+
+#### Updating a Slider
+```lua
+Slider:Set(10) -- The new slider integer value
 ```
