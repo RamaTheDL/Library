@@ -91,7 +91,7 @@ Section:Unlock()
 
 
 # - Interaction
-## **2. Elements**
+## **1. Elements**
 ### Notifying the User
 ```lua
 Rayfield:Notify({
