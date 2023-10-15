@@ -228,8 +228,8 @@ Dropdown:Add('test')
 ```lua
 Dropdown:Remove('test')
 ```
-
-## General Settings
+ㅤ
+### General Settings
 For every element you can add these. (Optional)
 
 ```lua
@@ -240,4 +240,18 @@ Info = 'Description/info',
 SectionParent = Section -- Section it's parented to
 
 })
+```
+
+#### Updating an existing element
+```lua
+Element:Destroy() -- Destroy
+```
+```lua
+Element:Visible(<bool>)
+```
+```lua
+Element:Lock(Reason:<string>)    -- Lock
+```
+```lua
+Element:Unlock()  -- Unlock
 ```
