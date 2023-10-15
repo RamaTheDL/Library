@@ -184,8 +184,7 @@ local Input = Tab:CreateInput({
    end,
 })
 ```
-
-
+ㅤ
 ## Creating a Dropdown Menu
 ```lua
 local Dropdown = Tab:CreateDropdown({
