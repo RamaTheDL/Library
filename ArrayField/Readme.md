@@ -217,5 +217,5 @@ Dropdown:Remove('test')
 ```
 ````
 
-> **Note**
+> **Nosee**
 > siu
