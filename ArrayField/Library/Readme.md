@@ -11,10 +11,11 @@ This documentation is for ArrayField Library.
 > always refer back to it as you build.
 >
 > Found a missing feature that you can’t live without?
-> Please suggest it on Discord (#sirius-forums channel)
-> and even consider adding it yourself on GitHub!
-> Rayfield & ArrayField is an open source project
-> and contributions from developers like you are
+> Please suggest it on Discord
+> (#sirius-forums channel) and even consider
+> adding it yourself on GitHub! Rayfield &
+> ArrayField is an open source project and
+> contributions from developers like you are
 > more than welcome!
 
 # - Configuration
