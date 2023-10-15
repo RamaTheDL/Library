@@ -1,6 +1,12 @@
 # × ArrayField Library ×
 This documentation is for ArrayField Library.
-#ffffff
+
+```
+function test() {
+  console.log("This code will have a copy button to the right of it");
+}
+```
+
 ## **1. Booting the Library**
 ```lua
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
