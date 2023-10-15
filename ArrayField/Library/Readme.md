@@ -53,12 +53,21 @@ local Window = Rayfield:CreateWindow({
    }
 })
 ```
+
+
+
 ㅤ
+
 ### Creating a Tab
 ```lua
 local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
 ```
+
+
+
+
 ㅤ
+
 ### Prompting the Window
 ```lua
 Window:Prompt({
@@ -75,29 +84,11 @@ Window:Prompt({
 	}
 })
 ```
+
+
+
 ㅤ
-ㅤㅤㅤㅤㅤ
-### Creating a Section
-```lua
-local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
-```
 
-#### Updating a Section
-```lua
-Section:Set("Section Example")
-```
-
-```lua
-Section:Destroy()
-```
-
-```lua
-Section:Lock()
-```
-
-```lua
-Section:Unlock()
-```
 
 
 
@@ -272,6 +263,11 @@ Element:Unlock()  -- Unlock
 ### Check the value of an existing element
 To check the current value of an existing element, using the variable, you can do `ElementName.CurrentValue`, if it’s a keybind or dropdown, you will need to use `KeybindName.CurrentKeybind` or `DropdownName.CurrentOption` You can also check it via the flags from `Rayfield.Flags`.
 ㅤ
+
+
+
+
+ㅤ
 ## **2. Binds**
 
 ### Creating a Keybind
@@ -287,7 +283,6 @@ local Keybind = Tab:CreateKeybind({
    end,
 })
 ```
-
 #### Updating a Keybind
 ```lua
 Keybind:Set("RightCtrl") -- Keybind (string)
@@ -302,6 +297,30 @@ Keybind:Set("RightCtrl") -- Keybind (string)
 ㅤ
 # - UI Components
 ## **1. Textual Elements**
+### Creating a Section
+```lua
+local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
+```
+#### Updating a Section
+```lua
+Section:Set("Section Example")
+```
+
+```lua
+Section:Destroy()
+```
+
+```lua
+Section:Lock()
+```
+
+```lua
+Section:Unlock()
+```
+
+
+
+ㅤ
 ### Creating a Label
 ```lua
 local Label = Tab:CreateLabel("Label Example",SectionParent)
