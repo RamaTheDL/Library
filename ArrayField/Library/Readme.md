@@ -201,9 +201,7 @@ local Dropdown = Tab:CreateDropdown({
    end,
 })
 ```
-```lua
-Updating a Dropdown
-```
+#### Updating a Dropdown
 ```lua
 Dropdown:Set("Option 2") -- The new option value
 ```
