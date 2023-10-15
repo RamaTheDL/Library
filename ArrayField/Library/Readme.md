@@ -13,8 +13,8 @@ This documentation is for [ArrayField](https://github.com/RamaTheDL/Library/blob
 > Found a missing feature that you can’t live without?
 > Please suggest it on Discord
 > [(#sirius-forums channel)](https://discord.gg/sirius) and even consider
-> adding it yourself on GitHub! Rayfield &
-> ArrayField is an open source project and
+> adding it yourself on GitHub! [Rayfield](https://docs.sirius.menu/rayfield) &
+> [ArrayField](https://arraydocumentation.vercel.app/en/introduction) is an open source project and
 > contributions from developers like you are
 > more than welcome!
 
