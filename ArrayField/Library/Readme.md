@@ -59,6 +59,7 @@ Window:Prompt({
 })
 ```
 ㅤ
+ㅤㅤㅤㅤㅤ
 ### Creating a Section
 ```lua
 local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
