@@ -2,7 +2,7 @@
 This documentation is for ArrayField Library.
 ## Getting Started
 
-```lua
+```
 > [!NOTE]
 > To get started with Arrayfield, check out the
 > script at the bottom. It provides quick links on
