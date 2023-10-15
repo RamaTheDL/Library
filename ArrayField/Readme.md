@@ -188,7 +188,6 @@ local Input = Tab:CreateInput({
 
 
 ## Creating a Dropdown Menu
-````lua
 ```lua
 local Dropdown = Tab:CreateDropdown({
    Name = "Dropdown Example",
@@ -201,21 +200,14 @@ local Dropdown = Tab:CreateDropdown({
    -- The variable (Option) is a string for the value that the dropdown was changed to
    end,
 })
-```
+
 **Updating a Dropdown**
-```lua
+
 Dropdown:Set("Option 2") -- The new option value
-```
-```lua
+
 Dropdown:Refresh({<table>},<selected>)
-```
-```lua
+
 Dropdown:Add('test')
-```
-```lua
+
 Dropdown:Remove('test')
 ```
-````
-
-> **Nosee**
-> siu
