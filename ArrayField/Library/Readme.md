@@ -3,7 +3,7 @@ This documentation is for [ArrayField](https://github.com/RamaTheDL/Library/blob
 
 ## Getting Started
 > [!NOTE]
-> To get started with Arrayfield, check out the
+> To get started with [ArrayField](https://arraydocumentation.vercel.app/en/introduction) check out the
 > script at the bottom. It provides quick links on
 > how to use all of the [ArrayField](https://arraydocumentation.vercel.app/en/introduction) features for your
 > own project.
