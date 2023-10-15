@@ -1,7 +1,7 @@
 # × ArrayField Library ×
 This documentation is for ArrayField Library.
 
-## **Booting the Library**
+## **1. Booting the Library**
 ```lua
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Source.lua'))()
 ```
@@ -70,7 +70,7 @@ Section:Lock()
 Section:Unlock()
 ```
 
-# **__Interact__**
+# **2. Interact**
 
 ## Notifying the User
 ```lua
