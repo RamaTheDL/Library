@@ -34,12 +34,12 @@ local Window = Rayfield:CreateWindow({
    }
 })
 ```
-
+ㅤ
 ## Creating a Tab
 ```lua
 local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
 ```
-
+ㅤ
 ## Prompting the Window
 ```lua
 Window:Prompt({
@@ -56,7 +56,7 @@ Window:Prompt({
 	}
 })
 ```
-
+ㅤ
 ## Creating a Section
 ```lua
 local Section = Tab:CreateSection("Section Example",true/false) -- The 2nd argument is to tell if its only a Title and doesnt contain elements
@@ -88,8 +88,7 @@ Rayfield:Notify({
 	},
 })
 ```
-
-
+ㅤ
 ## Creating a Button
 ```lua
 local Button = Tab:CreateButton({
@@ -105,8 +104,7 @@ local Button = Tab:CreateButton({
 ```lua
 Button:Set("Button Example","Interact") -- if you put nil, the string will not change
 ```
-
-
+ㅤ
 ## Creating a Toggle
 ```lua
 local Toggle = Tab:CreateToggle({
@@ -124,8 +122,7 @@ local Toggle = Tab:CreateToggle({
 ```lua
 Toggle:Set(false)
 ```
-
-
+ㅤ
 ## Creating a Color Picker
 ```lua
 local ColorPicker = Tab:CreateColorPicker({
@@ -144,8 +141,7 @@ local ColorPicker = Tab:CreateColorPicker({
 ```lua
 ColorPicker:Set(Color3.fromRGB(255,255,255)
 ```
-
-
+ㅤ
 ## Creating a Slider
 ```lua
 local Slider = Tab:CreateSlider({
@@ -166,8 +162,7 @@ local Slider = Tab:CreateSlider({
 ```lua
 Slider:Set(10) -- The new slider integer value
 ```
-
-
+ㅤ
 ## Creating a Textbox
 ```lua
 local Input = Tab:CreateInput({
