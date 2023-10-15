@@ -1,5 +1,5 @@
 # × ArrayField Library ×
-This documentation is for ArrayField Library.
+This documentation is for ArrayField Library.ㅤ
 ㅤ
 ㅤ
 # - Configuration
@@ -78,7 +78,8 @@ Section:Lock()
 Section:Unlock()
 ```
 
-## **2. Interact**
+# - Interaction
+## Elements
 ㅤ
 ### Notifying the User
 ```lua
