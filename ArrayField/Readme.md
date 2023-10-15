@@ -70,7 +70,7 @@ Section:Lock()
 Section:Unlock()
 ```
 
-# _Interact_
+# **__Interact__**
 
 ## Notifying the User
 ```lua
