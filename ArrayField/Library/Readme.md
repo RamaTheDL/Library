@@ -1,8 +1,7 @@
 # × ArrayField Library ×
 This documentation is for ArrayField Library.
-## Getting Started
 
-```
+## Getting Started
 > [!NOTE]
 > To get started with Arrayfield, check out the
 > script at the bottom. It provides quick links on
@@ -18,7 +17,6 @@ This documentation is for ArrayField Library.
 > ArrayField is an open source project and
 > contributions from developers like you are
 > more than welcome!
-```
 
 # - Configuration
 ## **1. Booting the Library**
