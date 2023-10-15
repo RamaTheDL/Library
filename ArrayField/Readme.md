@@ -1,4 +1,4 @@
-# ArrayField Library
+# - ArrayField Library
 This documentation is for ArrayField Library.
 
 ## Booting the Library
