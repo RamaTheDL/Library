@@ -2,8 +2,8 @@
 This documentation is for ArrayField Library.
 ㅤ
 ㅤ
-# Configuration
-## **1. Booting the Library**
+## Configuration
+### **1. Booting the Library**
 ```lua
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
 ```
@@ -203,7 +203,7 @@ local Dropdown = Tab:CreateDropdown({
    end,
 })
 ```
-#### Updating a Dropdown
+##### Updating a Dropdown
 ```lua
 Dropdown:Set("Option 2") -- The new option value
 ```
