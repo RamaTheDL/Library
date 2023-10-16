@@ -29,15 +29,6 @@ local Player = game.Players.LocalPlayer
 local GetName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
 
 -- // Key System // --
-
-local function CKey()
-
-end
-
-local function ICKey()
-
-end
-
 _G.KeyInput = "string"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Source.lua')))()
