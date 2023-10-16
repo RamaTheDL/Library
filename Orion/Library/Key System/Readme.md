@@ -12,4 +12,5 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/Library/mai
 --[[
 _G.Key = <string> - Te Key Text
 function ScriptHub() = <string> - The Function of the script
+]]
 ```
