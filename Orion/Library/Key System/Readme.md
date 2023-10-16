@@ -8,5 +8,8 @@ local function ScriptHub()
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Key%20System/Source.lua"))()
-```
+
+--[[
 _G.Key = <string> - Te Key Text
+function ScriptHub() = <string> - The Function of the script
+```
