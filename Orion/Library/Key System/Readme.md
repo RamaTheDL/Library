@@ -4,7 +4,7 @@
 _G.Key = "PUTYOURKEY"
 
 local function ScriptHub()
-	print("The function dumb")
+	print("The function")
 end
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RamaTheDL/Library/main/Orion/Library/Key%20System/Source.lua"))()
