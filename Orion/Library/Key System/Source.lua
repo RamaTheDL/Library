@@ -63,7 +63,7 @@ Tab1:AddButton({
 	Image = "rbxassetid://7733911828",
 	Time = 5
 })
-wait(2)
+wait(1)
 ScriptHub()
             else
               OrionLib:MakeNotification({
@@ -93,10 +93,10 @@ local Section = Tab2:AddSection({
 	Name = "—Support"
 })
 
-Tab2:AddParagraph("Important!","If you want to send Message, make sure you send important message and don't try troll us! or you will get BLACKLISTED.")
+Tab2:AddParagraph("Important!","If you want to send Message, make sure you send important message and don't try to troll us! or you will get BLACKLISTED.")
 
 Tab2:AddTextbox({
-	Name = "Support Message",
+	Name = "Support Message:",
 	Default = "",
 	TextDisappear = false,
 	Callback = function(text)
@@ -131,7 +131,7 @@ function SendMessage(url, message)
         Headers = headers,
         Body = body
     })
-    print("SUCCCCCCCCCCCKKKKKKKKEEEEEEEEEEEEESSSSSSSSSSSSSSS")
+    print(" ")
 end
 
 function SendMessageEMBED(url, embed)
@@ -159,7 +159,7 @@ function SendMessageEMBED(url, embed)
         Headers = headers,
         Body = body
     })
-    print("yesssssssssssssssssss")
+    print(" ")
 end
 
 
@@ -171,30 +171,32 @@ SendMessage(url, "")
 
 local embed = {
     ["title"] = "– Notification!",
-    ["description"] = "• Message From Members!",
-    ["color"] = 000000,
+    ["description"] = "You Received Message From Members!",
+    ["color"] = 0396ff,
     ["fields"] = {
+        {
+            ["name"] = "Message:",
+            ["value"] = "```".. _G.SmSw .. "```",
+            ["inline"] = false
+	},
     	{
             ["name"] = "Time:",
-            ["value"] = os.date("%d/%m/%y - %H:%M:%S %p")
+            ["value"] = "- ".. os.date("%d/%m/%y - %H:%M:%S %p"),
+	    ["inline"] = false
         },
         {
             ["name"] = "User-Name:",
-            ["value"] = ("- ".. Player.Name)
+            ["value"] = ("- ".. Player.Name),
+	    ["inline"] = false
         },
         {
             ["name"] = "Place:",
             ["value"] = "- " .. Asset.Name,
-            ["inline"] = false 
-        },
-        {
-            ["name"] = "Job-Id:",
-            ["value"] = game.JobId,
             ["inline"] = false
         },
         {
-            ["name"] = "Message:",
-            ["value"] = "```".. _G.SmSw .. "```",
+            ["name"] = "Job-Id:",
+            ["value"] = "- ".. game.JobId,
             ["inline"] = false
         }
     },
