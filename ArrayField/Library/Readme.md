@@ -335,7 +335,7 @@ Label:Set("Label Example")
 
 ### Creating a Paragraph
 ```lua
-local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example",SectionParent})
+local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"},SectionParent)
 ```
 #### Updating a Paragraph
 ```lua
