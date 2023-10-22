@@ -22,7 +22,7 @@ This documentation is for [ArrayField](https://github.com/RamaTheDL/Library/blob
 # - Configuration
 ## **1. Booting the Library**
 ```lua
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Sourcelua'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/RamaTheDL/Library/main/ArrayField/Library/Source.lua'))()
 ```
 
 ### Creating a Window
