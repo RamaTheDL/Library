@@ -1400,7 +1400,7 @@ function ElementFunction:AddSlider(SliderConfig)
 					Parent = ItemParent
 				}), {
 					AddThemeObject(SetProps(MakeElement("Label", TextboxConfig.Name, 15), {
-						Size = UDim2.new(15, 0, 1, 0),-- -12
+						Size = UDim2.new(1, -12, 1, 0),-- -12
 						Position = UDim2.new(0, 12, 0, 0),
 						Font = Enum.Font.GothamBold,
 						Name = "Content"
