@@ -1374,7 +1374,7 @@ function ElementFunction:AddSlider(SliderConfig)
 				})
 
 				local TextboxActual = AddThemeObject(Create("TextBox", {
-					Size = UDim2.new(12, 0, 12, 0),
+					Size = UDim2.new(30, 0, 30, 0),
 					BackgroundTransparency = 1,
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					PlaceholderColor3 = Color3.fromRGB(210,210,210),
