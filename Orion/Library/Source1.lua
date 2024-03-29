@@ -1374,7 +1374,7 @@ function ElementFunction:AddSlider(SliderConfig)
 				})
 
 				local TextboxActual = AddThemeObject(Create("TextBox", {
-					Size = UDim2.new(15, 0, 1, 0),
+					Size = UDim2.new(15, 0, 15, 0),
 					BackgroundTransparency = 1,
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					PlaceholderColor3 = Color3.fromRGB(210,210,210),
@@ -1400,8 +1400,8 @@ function ElementFunction:AddSlider(SliderConfig)
 					Parent = ItemParent
 				}), {
 					AddThemeObject(SetProps(MakeElement("Label", TextboxConfig.Name, 15), {
-						Size = UDim2.new(1, -20, 1, 0),-- -12
-						Position = UDim2.new(0, 20, 0, 0),
+						Size = UDim2.new(1, -12, 1, 0),-- -12
+						Position = UDim2.new(0, 12, 0, 0),
 						Font = Enum.Font.GothamBold,
 						Name = "Content"
 					}), "Text"),
