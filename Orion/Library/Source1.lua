@@ -1374,7 +1374,7 @@ function ElementFunction:AddSlider(SliderConfig)
 				})
 
 				local TextboxActual = AddThemeObject(Create("TextBox", {
-					Size = UDim2.new(10, 0, 1, 0),
+					Size = UDim2.new(15, 0, 1, 0),
 					BackgroundTransparency = 1,
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					PlaceholderColor3 = Color3.fromRGB(210,210,210),
@@ -1387,7 +1387,7 @@ function ElementFunction:AddSlider(SliderConfig)
 
 				local TextContainer = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 4), {
 					Size = UDim2.new(0, 24, 0, 24), --24/12
-					Position = UDim2.new(1, 5, 0.5, 0),-- -12
+					Position = UDim2.new(1, -12, 0.5, 0),-- -12
 					AnchorPoint = Vector2.new(1, 0.5)
 				}), {
 					AddThemeObject(MakeElement("Stroke"), "Stroke"),
