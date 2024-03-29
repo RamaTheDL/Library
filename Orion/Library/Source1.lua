@@ -14,7 +14,7 @@ local OrionLib = {
 		Default = {
 			Main = Color3.fromRGB(25, 25, 25),
 			Second = Color3.fromRGB(32, 32, 32),
-			Stroke = Color3.fromRGB(0, 255, 12),
+			Stroke = Color3.fromRGB(46, 46, 46),
 			Divider = Color3.fromRGB(56, 56, 56),
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
@@ -1387,7 +1387,7 @@ function ElementFunction:AddSlider(SliderConfig)
 
 				local TextContainer = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 4), {
 					Size = UDim2.new(0, 24, 0, 24),
-					Position = UDim2.new(4, -12, 0.5, 0),
+					Position = UDim2.new(2, -12, 0.5, 0),
 					AnchorPoint = Vector2.new(1, 0.5)
 				}), {
 					AddThemeObject(MakeElement("Stroke"), "Stroke"),
