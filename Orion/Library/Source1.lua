@@ -1396,11 +1396,11 @@ function ElementFunction:AddSlider(SliderConfig)
 
 
 				local TextboxFrame = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 5), {
-					Size = UDim2.new(15, 0, 0, 38),
+					Size = UDim2.new(1, 0, 0, 38),
 					Parent = ItemParent
 				}), {
 					AddThemeObject(SetProps(MakeElement("Label", TextboxConfig.Name, 15), {
-						Size = UDim2.new(1, -12, 1, 0),-- -12
+						Size = UDim2.new(-15, -12, 1, 0),-- -12
 						Position = UDim2.new(0, 12, 0, 0),
 						Font = Enum.Font.GothamBold,
 						Name = "Content"
