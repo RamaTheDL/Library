@@ -1370,7 +1370,7 @@ function ElementFunction:AddSlider(SliderConfig)
 				TextboxConfig.Callback = TextboxConfig.Callback or function() end
 
 				local Click = SetProps(MakeElement("Button"), {
-					Size = UDim2.new(8, 0, 1, 0)
+					Size = UDim2.new(1, 0, 1, 0)
 				})
 
 				local TextboxActual = AddThemeObject(Create("TextBox", {
