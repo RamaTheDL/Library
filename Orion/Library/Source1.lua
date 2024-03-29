@@ -15,7 +15,7 @@ local OrionLib = {
 			Main = Color3.fromRGB(25, 25, 25),
 			Second = Color3.fromRGB(32, 32, 32),
 			Stroke = Color3.fromRGB(50, 50, 50),
-			Divider = Color3.fromRGB(250, 250, 250),
+			Divider = Color3.fromRGB(17, 191, 240),
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
 		}
@@ -1374,7 +1374,7 @@ function ElementFunction:AddSlider(SliderConfig)
 				})
 
 				local TextboxActual = AddThemeObject(Create("TextBox", {
-					Size = UDim2.new(1, 0, 1, 0),
+					Size = UDim2.new(3, 0, 1, 0),
 					BackgroundTransparency = 1,
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					PlaceholderColor3 = Color3.fromRGB(210,210,210),
