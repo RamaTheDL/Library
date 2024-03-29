@@ -14,8 +14,8 @@ local OrionLib = {
 		Default = {
 			Main = Color3.fromRGB(25, 25, 25),
 			Second = Color3.fromRGB(32, 32, 32),
-			Stroke = Color3.fromRGB(50, 50, 50),
-			Divider = Color3.fromRGB(17, 191, 240),
+			Stroke = Color3.fromRGB(0, 255, 12),
+			Divider = Color3.fromRGB(56, 56, 56),
 			Text = Color3.fromRGB(240, 240, 240),
 			TextDark = Color3.fromRGB(150, 150, 150)
 		}
@@ -1370,11 +1370,11 @@ function ElementFunction:AddSlider(SliderConfig)
 				TextboxConfig.Callback = TextboxConfig.Callback or function() end
 
 				local Click = SetProps(MakeElement("Button"), {
-					Size = UDim2.new(1, 0, 1, 0)
+					Size = UDim2.new(4, 0, 1, 0)
 				})
 
 				local TextboxActual = AddThemeObject(Create("TextBox", {
-					Size = UDim2.new(3, 0, 1, 0),
+					Size = UDim2.new(4, 0, 1, 0),
 					BackgroundTransparency = 1,
 					TextColor3 = Color3.fromRGB(255, 255, 255),
 					PlaceholderColor3 = Color3.fromRGB(210,210,210),
@@ -1387,7 +1387,7 @@ function ElementFunction:AddSlider(SliderConfig)
 
 				local TextContainer = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 4), {
 					Size = UDim2.new(0, 24, 0, 24),
-					Position = UDim2.new(1, -12, 0.5, 0),
+					Position = UDim2.new(4, -12, 0.5, 0),
 					AnchorPoint = Vector2.new(1, 0.5)
 				}), {
 					AddThemeObject(MakeElement("Stroke"), "Stroke"),
