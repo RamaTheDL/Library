@@ -265,6 +265,11 @@ The above boolean value "true" is whether or not the current buttons will be del
 Dropdown:Set("dropdown option")
 ```
 
+## Interface Toggle Button (Optional)
+```lua
+OrionLib:AddToggleButton()
+```
+
 # Finishing your script (REQUIRED)
 The below function needs to be added at the end of your code.
 ```lua
