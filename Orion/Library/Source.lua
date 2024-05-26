@@ -517,7 +517,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		WindowConfig.IntroEnabled = true
 	end
 	WindowConfig.IntroText = WindowConfig.IntroText or "Orion Library"
-	_G.WindowConfig.CloseCallback = _G.WindowConfig.CloseCallback or function() end
+	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://8834748103"
 	WindowConfig.IntroIcon = WindowConfig.IntroIcon or "rbxassetid://8834748103"
@@ -694,7 +694,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			Time = 5
 		})
 		
-		_G.WindowConfig.CloseCallBack()
+		WindowConfig.CloseCallBack()
 	end)
 
 	AddConnection(UserInputService.InputBegan, function(Input)
@@ -1802,7 +1802,7 @@ function OrionLib:AddToggleButton()
 	AddConnection(_G.CloseBtn.MouseButton1Up, function()
 		AddToggleButton()
 		
-		_G.WindowConfig.CloseCallBack()
+		getfenv(0).WindowConfig.CloseCallBack()
 	end)
 	AddConnection(UserInputService.InputBegan, function(Input)
 		if Input.KeyCode == Enum.KeyCode.RightShift and UIHidden then
