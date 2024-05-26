@@ -1,6 +1,4 @@
-		Size = UDim2.new(1, 0, 0, 50),
-			Name = "TopBar"
-}local UserInputService = game:GetService("UserInputService")
+local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
