@@ -1,4 +1,6 @@
-local UserInputService = game:GetService("UserInputService")
+		Size = UDim2.new(1, 0, 0, 50),
+			Name = "TopBar"
+}local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -540,8 +542,8 @@ function OrionLib:MakeWindow(WindowConfig)
 	AddConnection(TabHolder.UIListLayout:GetPropertyChangedSignal("AbsoluteContentSize"), function()
 		TabHolder.CanvasSize = UDim2.new(0, 0, 0, TabHolder.UIListLayout.AbsoluteContentSize.Y + 16)
 	end)
-
-	local CloseBtn = SetChildren(SetProps(MakeElement("Button"), {
+	
+	_G.CloseBtn = SetChildren(SetProps(MakeElement("Button"), {
 		Size = UDim2.new(0.5, 0, 1, 0),
 		Position = UDim2.new(0.5, 0, 0, 0),
 		BackgroundTransparency = 1
@@ -666,7 +668,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					Size = UDim2.new(0, 1, 1, 0),
 					Position = UDim2.new(0.5, 0, 0, 0)
 				}), "Stroke"), 
-				CloseBtn,
+				_G.CloseBtn,
 				MinimizeBtn
 			}), "Second"), 
 		}),
@@ -685,7 +687,7 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	MakeDraggable(DragPoint, MainWindow)
 
-	AddConnection(CloseBtn.MouseButton1Up, function()
+	AddConnection(_G.CloseBtn.MouseButton1Up, function()
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
@@ -1799,7 +1801,7 @@ ColorH = 1 - (math.clamp(HueSelection.AbsolutePosition.Y - Hue.AbsolutePosition.
 end   
 
 function OrionLib:AddToggleButton()
-	AddConnection(CloseBtn.MouseButton1Up, function()
+	AddConnection(_G.CloseBtn.MouseButton1Up, function()
 		AddToggleButton()
 		
 		WindowConfig.CloseCallBack()
