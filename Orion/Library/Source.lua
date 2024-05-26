@@ -694,7 +694,7 @@ function OrionLib:MakeWindow(WindowConfig)
 			Time = 5
 		})
 		
-		WindowConfig.CloseCallBack()
+		WindowConfig.CloseCallback()
 	end)
 
 	AddConnection(UserInputService.InputBegan, function(Input)
