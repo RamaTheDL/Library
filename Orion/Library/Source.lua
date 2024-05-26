@@ -506,7 +506,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	local FirstTab = true
 	local Minimized = false
 	local Loaded = false
-	local UIHidden = false
+	_G.UIHidden = false
 
 	WindowConfig = WindowConfig or {}
 	WindowConfig.Name = WindowConfig.Name or "Orion Library"
@@ -687,7 +687,7 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	AddConnection(_G.CloseBtn.MouseButton1Up, function()
 		MainWindow.Visible = false
-		UIHidden = true
+		_G.UIHidden = true
 		OrionLib:MakeNotification({
 			Name = "Interface Hidden",
 			Content = "Tap RightShift to reopen the interface",
@@ -1803,7 +1803,7 @@ function OrionLib:AddToggleButton()
 		AddToggleButton()
 	end)
 	AddConnection(UserInputService.InputBegan, function(Input)
-		if Input.KeyCode == Enum.KeyCode.RightShift and UIHidden == false then
+		if Input.KeyCode == Enum.KeyCode.RightShift and _G.UIHidden == false then
 			if game:GetService("CoreGui"):FindFirstChild("FieldScreen") then
 				game:GetService("CoreGui"):FindFirstChild("FieldScreen"):Destroy()
 			else
