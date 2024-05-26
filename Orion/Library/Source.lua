@@ -1803,7 +1803,7 @@ function OrionLib:AddToggleButton()
 		AddToggleButton()
 	end)
 	AddConnection(UserInputService.InputBegan, function(Input)
-		if Input.KeyCode == Enum.KeyCode.RightShift and UIHidden then
+		if Input.KeyCode == Enum.KeyCode.RightShift and UIHidden == false then
 			if game:GetService("CoreGui"):FindFirstChild("FieldScreen") then
 				game:GetService("CoreGui"):FindFirstChild("FieldScreen"):Destroy()
 			else
