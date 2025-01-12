@@ -1799,7 +1799,7 @@ ColorH = 1 - (math.clamp(HueSelection.AbsolutePosition.Y - Hue.AbsolutePosition.
 end   
 
 function OrionLib:AddToggleButton()
-	for i, v in pairs(game:GetService("CoreGui") do
+	for i, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
 		if v:FindFirstChild("XR300") then
 			v:Destroy()
 			wait()
