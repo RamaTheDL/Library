@@ -1759,6 +1759,9 @@ ColorH = 1 - (math.clamp(HueSelection.AbsolutePosition.Y - Hue.AbsolutePosition.
 end   
 
 function OrionLib:AddToggleButton()
+	if game:GetService("CoreGui"):FindFirstChild("XR300") then
+		game:GetService("CoreGui"):FindFirstChild("XR300"):Destroy()
+	end
 	local FieldScreen = Instance.new("ScreenGui")
 	FieldScreen.DisplayOrder = 100
 	FieldScreen.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
@@ -1792,17 +1795,9 @@ function OrionLib:AddToggleButton()
 	UniBoxButton.Parent = UniButton
 	
 	UniBoxButton.MouseButton1Click:Connect(function()
-		BoolAnget = false
-		
-		if BoolAnget == true then
-			MainWindow.Visible = true
-			_G.UIHidden = false
-			BoolAnget = false
-		else
-			MainWindow.Visible = false
-			_G.UIHidden = true
-			BoolAnget = true
-		end
+		getfenv().keytoclick = "RightShift"
+		local vim = game:service("VirtualInputManager")
+		vim:SendKeyEvent(true, keytoclick, false, game)
 	end)
 end
 
