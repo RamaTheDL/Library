@@ -1800,6 +1800,8 @@ end
 
 function OrionLib:AddToggleButton()
 	AddConnection(_G.CloseBtn.MouseButton1Up, function()
+		game:GetService("CoreGui"):FindFirstChild("XR300"):Destroy()
+		wait()
 		AddToggleButton()
 	end)
 	AddConnection(UserInputService.InputBegan, function(Input)
@@ -1812,8 +1814,6 @@ function OrionLib:AddToggleButton()
 		end
 	end)
 end
-AddToggleButton()
-game:GetService("CoreGui"):FindFirstChild("XR300"):Destroy()
 
 function OrionLib:Destroy()
 	Orion:Destroy()
