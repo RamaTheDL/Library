@@ -243,11 +243,13 @@ local function SaveCfg(Name)
 end
 
 local function AddToggleButton()
+	game:GetService("CoreGui"):FindFirstChild("X"):Destroy()
+	wait(0.002)
 	local FieldScreen = Instance.new("ScreenGui")
 	FieldScreen.DisplayOrder = 100
 	FieldScreen.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 	FieldScreen.Parent = game:GetService("CoreGui") --gethui and gethui() or 
-	FieldScreen.Name = "X" .. tostring(math.random(1000,9999))
+	FieldScreen.Name = "X"
 	
 	local UniButton = Instance.new("ImageLabel")
 	UniButton.Name = "UniButton"
@@ -1812,7 +1814,7 @@ function OrionLib:AddToggleButton()
 		end
 	end)
 end
-	
+		
 function OrionLib:Destroy()
 	Orion:Destroy()
 end
