@@ -242,46 +242,6 @@ local function SaveCfg(Name)
 	writefile(OrionLib.Folder .. "/" .. Name .. ".txt", tostring(HttpService:JSONEncode(Data)))
 end
 
-local function AddToggleButton()
-	local FieldScreen = Instance.new("ScreenGui")
-	FieldScreen.DisplayOrder = 100
-	FieldScreen.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-	FieldScreen.Parent = game:GetService("CoreGui") --gethui and gethui() or 
-	FieldScreen.Name = "XR300"
-	
-	local UniButton = Instance.new("ImageLabel")
-	UniButton.Name = "UniButton"
-	UniButton.Image = "rbxassetid://14958620447"
-	UniButton.Active = false
-	--UniButton.AnchorPoint = Vector2.new(0.5,0.5)
-	UniButton.ZIndex = 10
-	UniButton.Position = UDim2.new(0.8,0,0,0)
-	UniButton.BorderSizePixel = 0
-	UniButton.BackgroundTransparency = 1
-	UniButton.Size = UDim2.new(0, 42, 0, 42)
-	UniButton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-	UniButton.Parent = FieldScreen
-	
-	local UniBoxButton = Instance.new("TextButton")
-	UniBoxButton.Name = "UniBoxButton"
-	--UniBoxButton.AnchorPoint = Vector2.new(0.5,0.5)
-	UniBoxButton.ZIndex = 10
-	UniBoxButton.AnchorPoint = Vector2.new(0.5, 0)
-	UniBoxButton.Position = UDim2.new(0.5, 0, 0, 0)
-	UniBoxButton.Size = UDim2.new(0, 126, 0, 42)
-	UniBoxButton.BorderSizePixel = 0
-	UniBoxButton.BackgroundTransparency = 1
-	UniBoxButton.Text = ""
-	UniBoxButton.SizeConstraint = Enum.SizeConstraint.RelativeXY
-	UniBoxButton.Parent = UniButton
-	
-	UniBoxButton.MouseButton1Click:Connect(function()
-		getfenv().keytoclick = "RightShift"
-		local vim = game:service("VirtualInputManager")
-		vim:SendKeyEvent(true, keytoclick, false, game)
-	end)
-end
-
 local WhitelistedMouse = {Enum.UserInputType.MouseButton1, Enum.UserInputType.MouseButton2,Enum.UserInputType.MouseButton3}
 local BlacklistedKeys = {Enum.KeyCode.Unknown,Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.KeyCode.Up,Enum.KeyCode.Left,Enum.KeyCode.Down,Enum.KeyCode.Right,Enum.KeyCode.Slash,Enum.KeyCode.Tab,Enum.KeyCode.Backspace,Enum.KeyCode.Escape}
 
@@ -1799,16 +1759,51 @@ ColorH = 1 - (math.clamp(HueSelection.AbsolutePosition.Y - Hue.AbsolutePosition.
 end   
 
 function OrionLib:AddToggleButton()
-	for i, v in pairs(game:GetService("CoreGui"):GetDescendants()) do
-		if v:FindFirstChild("XR300") then
-			v:Destroy()
-			wait()
-			AddToggleButton()
+	local FieldScreen = Instance.new("ScreenGui")
+	FieldScreen.DisplayOrder = 100
+	FieldScreen.ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+	FieldScreen.Parent = game:GetService("CoreGui") --gethui and gethui() or 
+	FieldScreen.Name = "XR300"
+	
+	local UniButton = Instance.new("ImageLabel")
+	UniButton.Name = "UniButton"
+	UniButton.Image = "rbxassetid://14958620447"
+	UniButton.Active = false
+	--UniButton.AnchorPoint = Vector2.new(0.5,0.5)
+	UniButton.ZIndex = 10
+	UniButton.Position = UDim2.new(0.8,0,0,0)
+	UniButton.BorderSizePixel = 0
+	UniButton.BackgroundTransparency = 1
+	UniButton.Size = UDim2.new(0, 42, 0, 42)
+	UniButton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+	UniButton.Parent = FieldScreen
+	
+	local UniBoxButton = Instance.new("TextButton")
+	UniBoxButton.Name = "UniBoxButton"
+	--UniBoxButton.AnchorPoint = Vector2.new(0.5,0.5)
+	UniBoxButton.ZIndex = 10
+	UniBoxButton.AnchorPoint = Vector2.new(0.5, 0)
+	UniBoxButton.Position = UDim2.new(0.5, 0, 0, 0)
+	UniBoxButton.Size = UDim2.new(0, 126, 0, 42)
+	UniBoxButton.BorderSizePixel = 0
+	UniBoxButton.BackgroundTransparency = 1
+	UniBoxButton.Text = ""
+	UniBoxButton.SizeConstraint = Enum.SizeConstraint.RelativeXY
+	UniBoxButton.Parent = UniButton
+	
+	UniBoxButton.MouseButton1Click:Connect(function()
+		BoolAnget = false
+		
+		if BoolAnget == true then
+			MainWindow.Visible = true
+			_G.UIHidden = false
+			BoolAnget = false
 		else
-			AddToggleButton()
+			MainWindow.Visible = false
+			_G.UIHidden = true
+			BoolAnget = true
 		end
-	end
-				
+	end)
 end
 
 function OrionLib:Destroy()
