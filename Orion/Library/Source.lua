@@ -1799,20 +1799,16 @@ ColorH = 1 - (math.clamp(HueSelection.AbsolutePosition.Y - Hue.AbsolutePosition.
 end   
 
 function OrionLib:AddToggleButton()
-	AddConnection(_G.CloseBtn.MouseButton1Up, function()
-		game:GetService("CoreGui"):FindFirstChild("XR300"):Destroy()
-		wait()
-		AddToggleButton()
-	end)
-	AddConnection(UserInputService.InputBegan, function(Input)
-		if Input.KeyCode == Enum.KeyCode.RightShift and _G.UIHidden == false then
-			if game:GetService("CoreGui"):FindFirstChild("FieldScreen") then
-				game:GetService("CoreGui"):FindFirstChild("FieldScreen"):Destroy()
-			else
-				-- No Function
-			end
+	for i, v in pairs(game:GetService("CoreGui") do
+		if v:FindFirstChild("XR300") then
+			v:Destroy()
+			wait()
+			AddToggleButton()
+		else
+			AddToggleButton()
 		end
-	end)
+	end
+				
 end
 
 function OrionLib:Destroy()
