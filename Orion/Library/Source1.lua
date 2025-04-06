@@ -1,4 +1,7 @@
-local UserInputService = game:GetService("UserInputService")
+ible = true
+			MobileReopenButton.Visible = false
+		end
+	end)local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -623,8 +626,8 @@ function OrionLib:MakeWindow(WindowConfig)
 
     local MobileReopenButton = SetChildren(SetProps(MakeElement("Button"), {
 		Parent = Orion,
-		Size = UDim2.new(0, 40, 0, 40),
-		Position = UDim2.new(0.5, -20, 0, 20),
+		Size = UDim2.new(0, 35, 0, 35),
+		Position = UDim2.new(0.5, -125, 0, -50),
 		BackgroundTransparency = 0,
 		BackgroundColor3 = OrionLib.Themes[OrionLib.SelectedTheme].Main,
 		Visible = false
